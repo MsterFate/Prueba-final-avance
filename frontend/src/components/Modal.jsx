@@ -54,7 +54,7 @@ function Modal({ activeItem, toggle, onSave }) {
                       onChange={handleChange}
                       className="w-full p-2 mb-3 border rounded-md"
                     >
-                      <option value="" disabled>Select Paciente</option>
+                      <option value="" disabled>Seleccionar Paciente</option>
                       {pacientes.map((paciente) => (
                         <option key={paciente.id} value={paciente.id}>
                           {paciente.nombre}
@@ -67,7 +67,7 @@ function Modal({ activeItem, toggle, onSave }) {
                       onChange={handleChange}
                       className="w-full p-2 mb-3 border rounded-md"
                     >
-                      <option value="" disabled>Select Especialista Primario</option>
+                      <option value="" disabled>Seleccionar Especialista Primario</option>
                       {especialistas.map((especialista) => (
                         <option key={especialista.id} value={especialista.id}>
                           {especialista.nombre}
@@ -80,7 +80,7 @@ function Modal({ activeItem, toggle, onSave }) {
                       onChange={handleChange}
                       className="w-full p-2 mb-3 border rounded-md"
                     >
-                      <option value="" disabled>Select Especialista Secundario</option>
+                      <option value="" disabled>Seleccionar Especialista Secundario</option>
                       {especialistas.map((especialista) => (
                         <option key={especialista.id} value={especialista.id}>
                           {especialista.nombre}
@@ -93,7 +93,7 @@ function Modal({ activeItem, toggle, onSave }) {
                       onChange={handleChange}
                       className="w-full p-2 mb-3 border rounded-md"
                     >
-                      <option value="" disabled>Select Estado de la Cita</option>
+                      <option value="" disabled>Seleccionar Estado de la Cita</option>
                       {estadosCita.map((estado) => (
                         <option key={estado} value={estado}>
                           {estado}

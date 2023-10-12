@@ -65,7 +65,7 @@ function Modal({ activeItem, toggle, onSave }) {
                                             className="w-full p-2 mb-3 border rounded-md"
                                         />
                                         <label htmlFor="especialidad" className="block text-sm font-medium text-gray-700">
-                                            Especialidad del Paciente
+                                            Selecione la especialidad
                                         </label>
                                         <select
                                             name="especialidad"
@@ -81,37 +81,37 @@ function Modal({ activeItem, toggle, onSave }) {
                                             ))}
                                         </select>
                                         <label htmlFor="codigo_medico" className="block text-sm font-medium text-gray-700">
-                                            Codigo Medico del Especialista
+                                            Código médico del Especialista
                                         </label>
                                         <input
                                             type="text"
                                             name="codigo_medico"
-                                            placeholder="Codigo del Especialista"
+                                            placeholder="Código del Especialista"
                                             value={item.codigo_medico}
                                             onChange={handleChange}
                                             className="w-
                                             full p-2 mb-3 border rounded-md"
                                         />
                                         <label htmlFor="nombre" className="block text-sm font-medium text-gray-700">
-                                            Número telefonico del Especialista
+                                            Número telefónico del Especialista
                                         </label>
                                         <input
                                             type="tel"
                                             name="numero_telefono"
-                                            placeholder="Número Telefonico"
+                                            placeholder="Número Telefónico"
                                             value={item.numero_telefono}
                                             onChange={handleChange}
                                             className="w-full p-2 mb-3 border rounded-md"
                                         />
                                         <label htmlFor="direccion" className="block text-sm font-medium text-gray-700">
-                                            Direccion del Especialista
+                                            Dirección del Especialista
                                         </label>
 
                                         <textarea
                                             name="direccion"
                                             value={item.direccion}
                                             onChange={handleChange}
-                                            placeholder="Direccion"
+                                            placeholder="Dirección"
                                             className="w-full p-2 mb-3 border rounded-md"
                                         />
 

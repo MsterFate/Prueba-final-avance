@@ -93,7 +93,7 @@ function Modal({ activeItem, toggle, onSave }) {
                                         className="w-full p-2 mb-3 border rounded-md"
                                     />
                                     <label htmlFor="genero" className="block text-sm font-medium text-gray-700">
-                                        Genéro
+                                        Género
                                     </label>
                                     <select
                                         name="genero"
@@ -165,13 +165,13 @@ function Modal({ activeItem, toggle, onSave }) {
                                 <form onSubmit={handleSubmit}>
                                     {/* Campos de Información de Contacto */}
                                     <label htmlFor="direccion" className="block text-sm font-medium text-gray-700">
-                                        Direccion del Paciente
+                                        Dirección del Paciente
                                     </label>
                                     <textarea
                                         name="direccion"
                                         value={item.direccion}
                                         onChange={handleChange}
-                                        placeholder="Direccion"
+                                        placeholder="Dirección"
                                         className="w-full p-2 mb-3 border rounded-md"
                                     />
                                     <label htmlFor="telefono" className="block text-sm font-medium text-gray-700">
@@ -180,18 +180,18 @@ function Modal({ activeItem, toggle, onSave }) {
                                     <input
                                         type="tel"
                                         name="telefono"
-                                        placeholder="Número Telefonico"
+                                        placeholder="Número Telefónico"
                                         value={item.telefono}
                                         onChange={handleChange}
                                         className="w-full p-2 mb-3 border rounded-md"
                                     />
                                     <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                                        Correo Electronico del Paciente
+                                        Correo Electrónico del Paciente
                                     </label>
                                     <input
                                         type="email"
                                         name="email"
-                                        placeholder="Correo Electronico"
+                                        placeholder="Correo Electrónico"
                                         value={item.email}
                                         onChange={handleChange}
                                         className="w-full p-2 mb-3 border rounded-md"
@@ -213,13 +213,13 @@ function Modal({ activeItem, toggle, onSave }) {
                                     <input
                                         type="text"
                                         name="telefono_contacto_emergencia"
-                                        placeholder="Telefono Contacto de Emergencia del Paciente"
+                                        placeholder="Teléfono Contacto de Emergencia del Paciente"
                                         value={item.telefono_contacto_emergencia}
                                         onChange={handleChange}
                                         className="w-full p-2 mb-3 border rounded-md"
                                     />
                                     <label htmlFor="relacion_contacto_emergencia" className="block text-sm font-medium text-gray-700">
-                                        Relacion Contacto de Emergencia
+                                        Relación Contacto de Emergencia
                                     </label>
                                     <input
                                         type="text"
@@ -230,12 +230,12 @@ function Modal({ activeItem, toggle, onSave }) {
                                         className="w-full p-2 mb-3 border rounded-md"
                                     />
                                     <label htmlFor="relacion_contacto_emergencia" className="block text-sm font-medium text-gray-700">
-                                        Medico Referente
+                                        Médico Referente
                                     </label>
                                     <input
                                         type="text"
                                         name="medico_referente"
-                                        placeholder="Medico Referente del Paciente"
+                                        placeholder="Médico Referente del Paciente"
                                         value={item.medico_referente}
                                         onChange={handleChange}
                                         className="w-full p-2 mb-3 border rounded-md"
@@ -259,7 +259,7 @@ function Modal({ activeItem, toggle, onSave }) {
                                     className="w-full p-2 mb-3 border rounded-md"
                                 />
                                 <label htmlFor="medicamentos_actuales" className="block text-sm font-medium text-gray-700">
-                                    Meicamentos Actuales
+                                    Medicamentos Actuales
                                 </label>
                                 <textarea
                                     name="medicamentos_actuales"
@@ -300,7 +300,7 @@ function Modal({ activeItem, toggle, onSave }) {
                                     className="w-full p-2 mb-3 border rounded-md"
                                 />
                                 <label htmlFor="seguro_medico" className="block text-sm font-medium text-gray-700">
-                                    Seguro Medico del Paciente
+                                    Seguro Médico del Paciente
                                 </label>
                                 <textarea
                                     name="seguro_medico"
@@ -310,11 +310,11 @@ function Modal({ activeItem, toggle, onSave }) {
                                     className="w-full p-2 mb-3 border rounded-md"
                                 />
                                 <label htmlFor="telefono" className="block text-sm font-medium text-gray-700">
-                                    Observaciones del Paciente
+                                    Observaciones sobre el Paciente
                                 </label>
                                 <textarea
                                     name="observaciones"
-                                    placeholder="Observaciones del Paciente"
+                                    placeholder="Observaciones sobre el Paciente"
                                     value={item.observaciones}
                                     onChange={handleChange}
                                     className="w-full p-2 mb-3 border rounded-md"
