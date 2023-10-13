@@ -65,8 +65,8 @@ function CreacionEspecialistas() {
         return especialistasList.map((item) => (
             <div key={item.id} className="mb-4 p-2 border rounded">
                 <div><strong>ID del Especialista:</strong> {item.id}</div>
-                <div><strong>Nombre Paciente:</strong> {item.nombre}</div>
-                <div><strong>Apellido Paciente:</strong> {item.apellido}</div>
+                <div><strong>Nombre Especialista:</strong> {item.nombre}</div>
+                <div><strong>Apellido Especialista:</strong> {item.apellido}</div>
 
                 <div><strong>Especialidad Especialista:</strong> {item.especialidad}</div>
                 <div><strong>DNI:</strong> {item.codigo_medico}</div>
