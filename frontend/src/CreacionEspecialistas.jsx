@@ -71,7 +71,7 @@ function CreacionEspecialistas() {
                 <div><strong>Especialidad Especialista:</strong> {item.especialidad}</div>
                 <div><strong>DNI:</strong> {item.codigo_medico}</div>
                 <div><strong>Fecha de Nacimiento:</strong> {item.numero_telefono}</div>
-                <div><strong>Direccion:</strong> {item.direccion}</div>
+                <div><strong>Dirección:</strong> {item.direccion}</div>
                 <button onClick={() => { setActiveItem(item); toggle(); }}>Editar</button>
                 <button onClick={() => axios.delete(`http://localhost:8000/api/especialistas/${item.id}/`).then(refreshList)}>Eliminar</button>
             </div>
