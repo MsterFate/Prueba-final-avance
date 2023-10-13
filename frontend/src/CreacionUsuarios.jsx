@@ -121,7 +121,7 @@ function CreacionUsuarios() {
                 <div><strong>Seguro Médico:</strong> {item.seguro_medico}</div>
                 <div><strong>Observaciones:</strong> {item.observaciones}</div>
                 <button onClick={() => { setActiveItem(item); toggle(); }}>Editar</button>
-                <button onClick={() => axios.delete(`http://localhost:8000/api/pacientes/${item.id}/`).then(refreshList)}>Eliminar</button>
+                <button onClick={() => axios.delete(`http://54.160.163.164t:8000/api/pacientes/${item.id}/`).then(refreshList)}>Eliminar</button>
             </div>
         ));
     };
