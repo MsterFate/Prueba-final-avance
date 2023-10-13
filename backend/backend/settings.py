@@ -133,5 +133,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ORIGIN_WHITELIST = [
      'http://localhost:3000',
      'http://3.87.171.162:80',
-     'http://3.87.171.162:3000'
+     'http://3.87.171.162:3000',
+     'http://54.89.143.245:80',
+     'http://54.89.143.245:3000'
 ]
