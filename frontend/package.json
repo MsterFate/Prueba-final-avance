@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "private": true,
-  "proxy": "http://18.234.215.19:8000",
+  "proxy": "http://54.160.163.164:8000",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
