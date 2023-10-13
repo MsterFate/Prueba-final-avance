@@ -27,7 +27,7 @@ function App() {
   }, []);
 
   const refreshList = () => {
-    axios.get('http://54.160.163.164/api/citas/')
+    axios.get('http://54.160.163.164:8000/api/citas/')
       .then((res) => setCitaList(res.data))
       .catch((err) => console.error('Error al cargar citas:', err));
   };
