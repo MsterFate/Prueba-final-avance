@@ -68,7 +68,7 @@ function App() {
         <div><strong>Fecha:</strong> {item.fecha_hora}</div>
         <div><strong>Estado de Cita:</strong> {item.estado}</div>
         <button onClick={() => { setActiveItem(item); toggle(); }}>Edit</button>
-        <button onClick={() => axios.delete(`http://localhost:8000/api/citas/${item.id}/`).then(refreshList)}>Delete</button>
+        <button onClick={() => axios.delete(`http://54.160.163.164:8000/api/citas/${item.id}/`).then(refreshList)}>Delete</button>
       </div>
     ));
   };
