@@ -103,8 +103,8 @@ function CreacionUsuarios() {
                 <div><strong>DNI:</strong> {item.dni}</div>
                 <div><strong>Fecha de Nacimiento:</strong> {item.fecha_nacimiento}</div>
                 <div><strong>Género:</strong> {item.genero}</div>
-                <div><strong>Direccion:</strong> {item.direccion}</div>
-                <div><strong>Telefono:</strong> {item.telefono}</div>
+                <div><strong>Dirección:</strong> {item.direccion}</div>
+                <div><strong>Teléfono:</strong> {item.telefono}</div>
                 <div><strong>Email:</strong> {item.email}</div>
                 <div><strong>Altura:</strong> {item.altura}</div>
                 <div><strong>Edad:</strong> {item.edad}</div>
@@ -113,12 +113,12 @@ function CreacionUsuarios() {
                 <div><strong>Medicamientos Actuales:</strong> {item.medicamentos_actuales}</div>
                 <div><strong>Enfermedades Previos:</strong> {item.enfermedades_previas}</div>
                 <div><strong>Cirugas Previas:</strong> {item.cirugias_previas}</div>
-                <div><strong>Medico Referente:</strong> {item.medico_referente}</div>
+                <div><strong>Médico Referente:</strong> {item.medico_referente}</div>
                 <div><strong>Nombre Contacto Emergencia:</strong> {item.nombre_contacto_emergencia}</div>
-                <div><strong>Telefono Contacto Emergencia:</strong> {item.telefono_contacto_emergencia}</div>
-                <div><strong>Relacion Contacto Emergencia:</strong> {item.relacion_contacto_emergencia}</div>
+                <div><strong>Teléfono Contacto Emergencia:</strong> {item.telefono_contacto_emergencia}</div>
+                <div><strong>Relación Contacto Emergencia:</strong> {item.relacion_contacto_emergencia}</div>
                 <div><strong>Fecha Ingreso:</strong> {item.fecha_ingreso}</div>
-                <div><strong>Seguro Medico:</strong> {item.seguro_medico}</div>
+                <div><strong>Seguro Médico:</strong> {item.seguro_medico}</div>
                 <div><strong>Observaciones:</strong> {item.observaciones}</div>
                 <button onClick={() => { setActiveItem(item); toggle(); }}>Editar</button>
                 <button onClick={() => axios.delete(`http://localhost:8000/api/pacientes/${item.id}/`).then(refreshList)}>Eliminar</button>
