@@ -27,7 +27,7 @@ function App() {
   }, []);
 
   const refreshList = () => {
-    axios.get('http://18.234.215.19/api/citas/')
+    axios.get('http://54.160.163.164/api/citas/')
       .then((res) => setCitaList(res.data))
       .catch((err) => console.error('Error al cargar citas:', err));
   };
@@ -38,7 +38,7 @@ function App() {
 
   const handleSubmit = (item) => {
     toggle();
-    const apiUrl = item.id ? `http://18.234.215.19:8000/api/citas/${item.id}/` : 'http://18.234.215.19:8000/api/citas/';
+    const apiUrl = item.id ? `http://54.160.163.164:8000/api/citas/${item.id}/` : 'http://54.160.163.164:8000/api/citas/';
     const method = item.id ? 'put' : 'post';
 
     axios[method](apiUrl, item)
