@@ -69,7 +69,7 @@ function CreacionEspecialistas() {
                 <div><strong>Apellido Especialista:</strong> {item.apellido}</div>
 
                 <div><strong>Especialidad Especialista:</strong> {item.especialidad}</div>
-                <div><strong>DNI:</strong> {item.codigo_medico}</div>
+                <div><strong>Codigo Médico:</strong> {item.codigo_medico}</div>
                 <div><strong>Fecha de Nacimiento:</strong> {item.numero_telefono}</div>
                 <div><strong>Dirección:</strong> {item.direccion}</div>
                 <button onClick={() => { setActiveItem(item); toggle(); }}>Editar</button>
