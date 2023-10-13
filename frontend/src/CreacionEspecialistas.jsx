@@ -73,7 +73,7 @@ function CreacionEspecialistas() {
                 <div><strong>Fecha de Nacimiento:</strong> {item.numero_telefono}</div>
                 <div><strong>Dirección:</strong> {item.direccion}</div>
                 <button onClick={() => { setActiveItem(item); toggle(); }}>Editar</button>
-                <button onClick={() => axios.delete(`http://localhost:8000/api/especialistas/${item.id}/`).then(refreshList)}>Eliminar</button>
+                <button onClick={() => axios.delete(`http://54.160.163.164:8000/api/especialistas/${item.id}/`).then(refreshList)}>Eliminar</button>
             </div>
         ));
     };
