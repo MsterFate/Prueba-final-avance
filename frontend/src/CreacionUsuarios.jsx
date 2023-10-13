@@ -41,7 +41,7 @@ function CreacionUsuarios() {
     }, []);
 
     const refreshList = () => {
-        axios.get('http://localhost:8000/api/pacientes/')
+        axios.get('http://18.234.215.19:8000/api/pacientes/')
             .then((res) => setPacientesList(res.data))
             .catch((err) => console.error('Error al cargar pacientes:', err));
     };
@@ -52,7 +52,7 @@ function CreacionUsuarios() {
 
     const handleSubmit = (item) => {
         toggle();
-        const apiUrl = item.id ? `http://localhost:8000/api/pacientes/${item.id}/` : 'http://localhost:8000/api/pacientes/';
+        const apiUrl = item.id ? `http://18.234.215.19:8000/api/pacientes/${item.id}/` : 'http://18.234.215.19:8000/api/pacientes/';
         const method = item.id ? 'put' : 'post';
 
         axios[method](apiUrl, item)
