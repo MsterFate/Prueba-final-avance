@@ -41,7 +41,7 @@ function CreacionUsuarios() {
     }, []);
 
     const refreshList = () => {
-        axios.get('http://54.160.163.164:8000/api/pacientes/')
+        axios.get('http://18.208.217.24:8000/api/pacientes/')
             .then((res) => setPacientesList(res.data))
             .catch((err) => console.error('Error al cargar pacientes:', err));
     };
@@ -52,7 +52,7 @@ function CreacionUsuarios() {
 
     const handleSubmit = (item) => {
         toggle();
-        const apiUrl = item.id ? `http://54.160.163.164:8000/api/pacientes/${item.id}/` : 'http://54.160.163.164:8000/api/pacientes/';
+        const apiUrl = item.id ? `http://18.208.217.24:8000/api/pacientes/${item.id}/` : 'http://18.208.217.24:8000/api/pacientes/';
         const method = item.id ? 'put' : 'post';
 
         axios[method](apiUrl, item)
@@ -121,7 +121,7 @@ function CreacionUsuarios() {
                 <div><strong>Seguro Médico:</strong> {item.seguro_medico}</div>
                 <div><strong>Observaciones:</strong> {item.observaciones}</div>
                 <button onClick={() => { setActiveItem(item); toggle(); }}>Editar</button>
-                <button onClick={() => axios.delete(`http://54.160.163.164:8000/api/pacientes/${item.id}/`).then(refreshList)}>Eliminar</button>
+                <button onClick={() => axios.delete(`http://18.208.217.24:8000/api/pacientes/${item.id}/`).then(refreshList)}>Eliminar</button>
             </div>
         ));
     };
