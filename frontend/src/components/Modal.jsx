@@ -13,11 +13,11 @@ function Modal({ activeItem, toggle, onSave }) {
   ]);
 
   useEffect(() => {
-    axios.get('http://54.160.163.164:8000/api/pacientes/')
+    axios.get('http://18.208.217.24:8000/api/pacientes/')
       .then((res) => setPacientes(res.data))
       .catch((err) => console.error('Error al cargar pacientes:', err));
 
-    axios.get('http://54.160.163.164:8000/api/especialistas/')
+    axios.get('http://18.208.217.24:8000/api/especialistas/')
       .then((res) => setEspecialistas(res.data))
       .catch((err) => console.error('Error al cargar especialistas:', err));
   }, []);
