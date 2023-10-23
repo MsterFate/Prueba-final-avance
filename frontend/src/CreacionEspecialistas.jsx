@@ -24,7 +24,7 @@ function CreacionEspecialistas() {
     }, []);
 
     const refreshList = () => {
-        axios.get('http://54.160.163.164:8000/api/especialistas/')
+        axios.get('http://18.208.217.24:8000/api/especialistas/')
             .then((res) => setEspecialistasList(res.data))
             .catch((err) => console.error('Error al cargar especialista:', err));
     };
@@ -35,7 +35,7 @@ function CreacionEspecialistas() {
 
     const handleSubmit = (item) => {
         toggle();
-        const apiUrl = item.id ? `http://54.160.163.164:8000/api/especialistas/${item.id}/` : 'http://54.160.163.164:8000/api/especialistas/';
+        const apiUrl = item.id ? `http://18.208.217.24:8000/api/especialistas/${item.id}/` : 'http://18.208.217.24:8000/api/especialistas/';
         const method = item.id ? 'put' : 'post';
 
         axios[method](apiUrl, item)
@@ -73,7 +73,7 @@ function CreacionEspecialistas() {
                 <div><strong>Fecha de Nacimiento:</strong> {item.numero_telefono}</div>
                 <div><strong>Dirección:</strong> {item.direccion}</div>
                 <button onClick={() => { setActiveItem(item); toggle(); }}>Editar</button>
-                <button onClick={() => axios.delete(`http://54.160.163.164:8000/api/especialistas/${item.id}/`).then(refreshList)}>Eliminar</button>
+                <button onClick={() => axios.delete(`http://18.208.217.24:8000/api/especialistas/${item.id}/`).then(refreshList)}>Eliminar</button>
             </div>
         ));
     };
